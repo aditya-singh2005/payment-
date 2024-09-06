@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Payment Method</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="mascot">
+        <img src="./public/mascot.png" alt="Tourism Mascot" class="mascot-image">
+    </div>
+    <div class="container">
+        <h2>Select Payment Method</h2>
+        <div class="payment-options">
+            <div class="option" onclick="selectPaymentOption('upi')">
+                <img src="./public/upi-logo.png" alt="UPI" class="option-logo">
+                <span class="option-name">UPI</span>
+            </div>
+            <div class="option" onclick="selectPaymentOption('cards')">
+                <img src="./public/cards-logo.png" alt="Cards" class="option-logo">
+                <span class="option-name">Cards</span>
+                <div class="logos">
+                    <img src="./public/visa.png" alt="Visa" class="sub-logo">
+                    <img src="./public/mastercard.png" alt="MasterCard" class="sub-logo">
+                </div>
+            </div>
+            <div class="option" onclick="selectPaymentOption('netbanking')">
+                <img src="./public/netbanking-logo.png" alt="Netbanking" class="option-logo">
+                <span class="option-name">Netbanking</span>
+                <div class="logos">
+                    <img src="./public/sbi.png" alt="SBI" class="sub-logo">
+                    <img src="./public/hdfc.png" alt="HDFC" class="sub-logo">
+                </div>
+            </div>
+            <div class="option" onclick="selectPaymentOption('wallet')">
+                <img src="./public/wallet-logo.png" alt="Wallet" class="option-logo">
+                <span class="option-name">Wallet</span>
+            </div>
+            <div class="option" onclick="selectPaymentOption('emi')">
+                <img src="./public/emi-logo.png" alt="EMI" class="option-logo">
+                <span class="option-name">EMI</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function selectPaymentOption(option) {
+            window.location.href = `${option}-payment.html`;
+        }
+    </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Payment Method</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="mascot">
+        <img src="./public/mascot.png" alt="Tourism Mascot" class="mascot-image">
+    </div>
+    <div class="container">
+        <h2>Select Payment Method</h2>
+        <div class="payment-options">
+            <div class="option" onclick="selectPaymentOption('upi')">
+                <img src="upi-logo.png" alt="UPI" class="option-logo">
+                <span class="option-name">UPI</span>
+            </div>
+            <div class="option" onclick="selectPaymentOption('cards')">
+                <img src="cards-logo.png" alt="Cards" class="option-logo">
+                <span class="option-name">Cards</span>
+                <div class="logos">
+                    <img src="visa-logo.png" alt="Visa" class="sub-logo">
+                    <img src="mastercard-logo.png" alt="MasterCard" class="sub-logo">
+                </div>
+            </div>
+            <div class="option" onclick="selectPaymentOption('netbanking')">
+                <img src="netbanking-logo.png" alt="Netbanking" class="option-logo">
+                <span class="option-name">Netbanking</span>
+                <div class="logos">
+                    <img src="sbi-logo.png" alt="SBI" class="sub-logo">
+                    <img src="hdfc-logo.png" alt="HDFC" class="sub-logo">
+                </div>
+            </div>
+            <div class="option" onclick="selectPaymentOption('wallet')">
+                <img src="wallet-logo.png" alt="Wallet" class="option-logo">
+                <span class="option-name">Wallet</span>
+            </div>
+            <div class="option" onclick="selectPaymentOption('emi')">
+                <img src="emi-logo.png" alt="EMI" class="option-logo">
+                <span class="option-name">EMI</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function selectPaymentOption(option) {
+            window.location.href = `${option}-payment.html`;
+        }
+    </script>
+</body>
+</html> -->

@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    /* background-image: url("./public/wallpaper.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+
+.mascot {
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20%; /* Adjusted size for mascot */
+}
+
+.mascot-image {
+    width: 100%;
+}
+
+.container {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%; /* Adjusted width for a smaller window */
+    margin-left: 20%; /* Space for mascot */
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+/* Payment Options Page */
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between blocks */
+}
+
+.option {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width of container */
+    box-sizing: border-box;
+    overflow: hidden; /* Ensure blocks do not overflow */
+}
+
+.option:hover {
+    background-color: #e0e0e0;
+}
+
+.option-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.option-name {
+    flex-grow: 1;
+    font-size: 18px;
+    color: #333;
+}
+
+.logos {
+    display: flex;
+    gap: 10px;
+}
+
+.sub-logo {
+    width: 30px;
+    height: 30px;
+}
+
+/* Individual Payment Pages */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Ensure spacing between input groups */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    padding: 15px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.success-message {
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+    text-align: center;
+    color: green;
+    font-size: 22px;
+}
+
+.success-message.active {
+    display: block; /* Show when active */
+}
+.success-icon {
+    display: block;
+    margin: 20px auto;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+}

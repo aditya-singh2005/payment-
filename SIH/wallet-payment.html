@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet Payment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="mascot">
+        <img src="./public/mascot.png" alt="Tourism Mascot" class="mascot-image">
+    </div>
+    <div class="container">
+        <h2>Wallet Payment</h2>
+        <form id="wallet-form">
+            <div class="input-group">
+                <label for="wallet-type">Select Wallet:</label>
+                <select id="wallet-type" name="wallet-type" required>
+                    <option value="">Choose your wallet</option>
+                    <option value="paytm">Paytm</option>
+                    <option value="phonepe">PhonePe</option>
+                    <option value="mobikwik">MobiKwik</option>
+                    <option value="amazonpay">Amazon Pay</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="mobile-number">Mobile Number:</label>
+                <input type="text" id="mobile-number" name="mobile-number" placeholder="+91-XXXXXXXXXX" required>
+            </div>
+            <div class="input-group">
+                <label for="otp">Enter OTP:</label>
+                <input type="text" id="otp" name="otp" placeholder="Enter OTP" required>
+            </div>
+            <div class="input-group">
+                <label for="amount">Enter Amount:</label>
+                <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+            </div>
+            <div class="input-group">
+                <button type="submit">Pay Now</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('wallet-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Simulate processing and redirect to the success page
+            setTimeout(function() {
+                window.location.href = 'payment-success.html';
+            }, 1000); // Simulate processing delay
+        });
+    </script>
+</body>
+</html>
